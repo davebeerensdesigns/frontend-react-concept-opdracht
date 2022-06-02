@@ -1,0 +1,8 @@
+article.single{
+    margin:5rem 0;
+
+}
+
+article.single .post-title{
+    text-transform: capitalize;
+}

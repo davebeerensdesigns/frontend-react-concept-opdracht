@@ -3,18 +3,19 @@ import {NavLink} from "react-router-dom";
 import Logo from '../../assets/logo.png';
 import './Header.css';
 
-function Header(props) {
+function Header({children}) {
     return (
         <header className='header'>
             <div className='container'>
                 <nav>
                     <NavLink to="/">Hottest posts</NavLink>
-                    <NavLink to="/subreddit">Reddit</NavLink>
+                    <a href="https://www.reddit.com" target='_blank'>Reddit</a>
                     <NavLink to="/subreddit/memes">Memes</NavLink>
                 </nav>
-                <figure className='logo'>
-                    <img src={Logo}/>
-                </figure>
+
+                <div className='title'>
+                    {children}
+                </div>
             </div>
         </header>
     );

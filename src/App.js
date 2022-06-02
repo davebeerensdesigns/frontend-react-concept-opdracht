@@ -14,18 +14,13 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
-                <Header/>
                 <main id='page'>
-                    <div className='container'>
-                        <Routes>
-                            <Route path="/"
-                                   element={<Home/>}/>
-                            <Route path="/subreddit"
-                                   element={<Post/>}/>
-                            <Route path="/subreddit/:subredditId"
-                                   element={<Post/>}/>
-                        </Routes>
-                    </div>
+                    <Routes>
+                        <Route path="/"
+                               element={<Home/>}/>
+                        <Route path="/subreddit/:subredditId"
+                               element={<Post/>}/>
+                    </Routes>
                 </main>
                 <Footer/>
             </BrowserRouter>

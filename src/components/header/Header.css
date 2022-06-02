@@ -24,12 +24,15 @@ header.header nav a:focus {
     color: var(--color-black);
 }
 
-header.header .logo {
+header.header .title {
     display: block;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
-header.header .logo img{
+header.header .title img{
     display: block;
     width: 100%;
     height: auto;

@@ -8,7 +8,7 @@ function PostList({loading, posts}) {
             {loading && <div className='loading'>loading...</div>}
             {!loading && posts.map(
                 (post) => {
-                    return <Post key={post.id} title={post.title} link={'/subreddit/' + post.subreddit} label={post.subreddit_name_prefixed} comments={post.num_comments} ups={post.ups} />
+                    return <Post key={post.id} title={post.title} link={'/subreddit/' + post.subreddit} url={post.url} label={post.subreddit_name_prefixed} comments={post.num_comments} ups={post.ups} />
                 }
             )
             }

@@ -3,6 +3,8 @@ import axios from "axios";
 import Post from "../../components/post/Post";
 import PostList from "../../components/post-list/PostList";
 import PageTitle from "../../components/page-title/PageTitle";
+import Header from "../../components/header/Header";
+import Logo from "../../assets/logo.png";
 
 function Home() {
 
@@ -28,14 +30,17 @@ function Home() {
         getHotPosts();
     }, []);
 
-    console.log(hotPosts)
-
     return (
         <>
+            <Header>
+                <img src={Logo}/>
+            </Header>
             <PageTitle>
                 <h1>Hottest Posts <small>on Reddit right now</small></h1>
             </PageTitle>
-            <PostList loading={loading} posts={hotPosts}/>
+            <div className='container'>
+                <PostList loading={loading} posts={hotPosts}/>
+            </div>
         </>
     );
 }

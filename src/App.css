@@ -73,6 +73,10 @@ h6{
     font-size: 0.9rem;
 }
 
+p{
+    margin-bottom: 1rem;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
@@ -99,6 +103,20 @@ button,
 textarea,
 select {
     font: inherit;
+}
+
+button{
+    border: 1px solid transparent;
+    background:none;
+    color: var(--color-red);
+    text-decoration:underline;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor:pointer;
+    cursor:pointer;
+}
+button:hover,button:focus, button:active{
+    color: var(--color-black);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
