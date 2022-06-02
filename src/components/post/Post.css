@@ -1,0 +1,44 @@
+.card{
+    border-radius: 4px;
+    padding:1rem;
+    background-color: var(--color-white);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.card h3 a{
+    text-decoration: none;
+    color: var(--color-black);
+    transition: color .2s ease-in-out;
+}
+.card h3 a:hover{
+    color: var(--color-red);
+}
+.card .meta{
+    margin-top: auto;
+}
+
+.subreddit-link{
+    display: block;
+    font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+    .card {
+        flex: 0 100%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    .card {
+        flex: 0 calc(50% - .5rem);
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .card {
+        flex: 0 calc(33% - .5rem);
+    }
+}
