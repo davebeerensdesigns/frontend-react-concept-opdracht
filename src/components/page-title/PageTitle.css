@@ -1,0 +1,9 @@
+.page-title{
+    max-width: 600px;
+    margin: 3rem auto;
+    text-align: center;
+}
+.page-title small{
+    display: block;
+    font-size: .9rem;
+}
